@@ -8,7 +8,7 @@ Mandrill_Node.js
 
 First you'll need to create an account. Once you're logged into your accont, click the options to Get API keys. Generate a new key, and copy it so you can use it for the exercises. For future refrence, you can accesss API keys at Settings > SMTP & API Credentials.
 
-[Mandrill API](https://www.npmjs.org/package/mandrill-api)is a npm module for Node.js that makes it so you can use Mandrill's API.
+[Mandrill API](https://www.npmjs.org/package/mandrill-api) is a npm module for Node.js that makes it so you can use Mandrill's API.
 
 I've created a basic Node application using express.  Fork and clone the repo - open the terminal and cd into the directory - and install the dependencies:
 ```
@@ -58,7 +58,7 @@ app.get('/mandrill', mandrillCtrl.sendEmail);
 
 Go to the terminal - cd into your directory - type $ node server.js - open Postman and type in http://localhost:8080/mandrill and select GET from the dropdown - press the send button...
 
-**BOOM!** Now as long as your weren't a dumbosaurus with syntax errors, you should see and email in your box.  Not there you say? Well check your spam folder.  Voila! 
+**BOOM!** Now as long as your weren't a ZERO with syntax errors, you should see and email in your box.  Not there you say? Well check your spam folder.  Voila! 
 
 Down the road, when you are sending if from a real website with a real domain.  Head over to the Mandrill [SPF and DKIM Docs](http://help.mandrill.com/entries/21751322-What-are-SPF-and-DKIM-and-do-I-need-to-set-them-up-) to find out more.
 

@@ -56,7 +56,7 @@ Head down the the routes and lets make the magic happen:
 app.get('/mandrill', mandrillCtrl.sendEmail);
 ```
 
-Open Postman.  Type in http://localhost:8080/mandrill and select GET from the dropdown...
+Go to the terminal - cd into your directory - type $ node server.js - open Postman and type in http://localhost:8080/mandrill and select GET from the dropdown - press the send button...
 
 **BOOM!** Now as long as your weren't a dumbosaurus with syntax errors, you should see and email in your box.  Not there you say? Well check your spam folder.  Voila! 
 

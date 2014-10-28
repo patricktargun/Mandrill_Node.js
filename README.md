@@ -35,7 +35,7 @@ var params = {
 ```
 There are a lot of options here for the message.  Check out the [Mandrill API](https://mandrillapp.com/api/docs/messages.nodejs.html#method=send).
 
-Not let's add in a sendEmail method.
+Now let's add in a sendEmail method.
 ```javascript
 module.exports.sendEmail = function(req, res){
 	mandrill_client.messages.send(params, function(result){
@@ -45,8 +45,9 @@ module.exports.sendEmail = function(req, res){
 	});
 }
 ```
+As you can see we are exporting it.
 
-Now for the fun part.  Go to server.js and require the mandrill-conotoller file under required files.
+Here's the fun part.  Go to server.js and require the mandrill-conotoller file under required files.
 ```javascript
 var mandrillCtrl = require('./app/mandrill-controller');
 ```
@@ -58,9 +59,11 @@ app.get('/mandrill', mandrillCtrl.sendEmail);
 
 Go to the terminal - cd into your directory - type $ node server.js - open Postman and type in http://localhost:8080/mandrill and select GET from the dropdown - press the send button...
 
-**BOOM!** Now as long as your weren't a ZERO with syntax errors, you should see and email in your box.  Not there you say? Well check your spam folder.  Voila! 
+**BOOM!** Now as long as your not a complete zero with syntax errors, you should see and email in your box.  Not there you say? Well check your spam folder.  Voila! 
 
-Down the road, when you are sending if from a real website with a real domain.  Head over to the Mandrill [SPF and DKIM Docs](http://help.mandrill.com/entries/21751322-What-are-SPF-and-DKIM-and-do-I-need-to-set-them-up-) to find out more.
+Down the road, when you are sending the email from a hosted website, you'll want to head over to the Mandrill [SPF and DKIM Docs](http://help.mandrill.com/entries/21751322-What-are-SPF-and-DKIM-and-do-I-need-to-set-them-up-) to find out more about protecting your emails from the spam folders.
+
+That's all folks!
 
 
 

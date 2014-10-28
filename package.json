@@ -1,0 +1,25 @@
+{
+  "name": "powerdrill",
+  "version": "0.0.0",
+  "description": "Learning Powerdrill",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Targun/powerdrill.git"
+  },
+  "author": "PJ Targun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Targun/powerdrill/issues"
+  },
+  "homepage": "https://github.com/Targun/powerdrill",
+  "dependencies": {
+    "body-parser": "^1.9.2",
+    "express": "^4.10.0",
+    "mandrill-api": "^1.0.41"
+  }
+}
